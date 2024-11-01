@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Product } from "@/app/interfaces";
 import ProductCard from "@/app/components/ProductCard";
