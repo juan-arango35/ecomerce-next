@@ -3,8 +3,12 @@ import { Product } from "@/app/interfaces";
 import ProductCard from "@/app/components/ProductCard";
 
 
-interface CategoryProductsProps {
+/* interface CategoryProductsProps {
   params: { name: string };
+} */
+
+interface Params {
+  name: string;
 }
 
 async function loadCategoryProducts(
@@ -20,7 +24,7 @@ async function loadCategoryProducts(
   return data;
 }
 
-const CategoryProducts = async ({ params }: CategoryProductsProps) => {
+const CategoryProducts = async ({ params }: { params: Params }) => {
   const categoryName = decodeURIComponent(params.name);
   const products = await loadCategoryProducts(params.name);
 
