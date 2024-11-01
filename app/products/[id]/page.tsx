@@ -20,6 +20,7 @@ async function loadProduct(id: string): Promise<Product | null> {
     const data = await response.json();
     return data;
   } catch (error) {
+    console.error("Error al obtener los datos:", error);
     return null;
   }
 }
