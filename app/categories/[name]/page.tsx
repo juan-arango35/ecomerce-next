@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { Product } from "@/app/interfaces";
 import ProductCard from "@/app/components/ProductCard";
 
+
 interface CategoryProductsProps {
   params: { name: string };
 }
