@@ -1,5 +1,5 @@
 import CategoriesPage from "@/app/categories/page";
-import ProductsList from "@/app/products/page";
+
 
 const CategoriesComponent = () => {
   return (
